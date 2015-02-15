@@ -2,16 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
+    <style type="text/css">
 
-	</style>
-	<script src="http://fb.me/react-0.12.2.js"></script>
-	<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+    </style>
+    <script src="http://fb.me/react-0.12.2.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
 </head>
 <body>
-	<div id="app-container"></div>
+<div id="app-container"></div>
 
-	<script type="text/jsx">
+<script type="text/jsx">
 	/**
 	*
 	* Assignment:
@@ -20,6 +20,18 @@
 	*
 	*/
 
+    var Recipe = React.createClass({
+        render: function () {
+            return (
+            <form>
+                <ul>
+                    <li>5 widgets</li>
+                    <li>5 gadgets</li>
+                </ul>
+            </form>
+            );
+        }
+    });
 
 	var RecipeList = React.createClass({
 	  render: function() {
@@ -36,6 +48,11 @@
 	    return (
 	      <div>
 	        RecipeForm component text
+            <ol>
+                <li><Recipe/></li>
+                <li><Recipe/></li>
+                <li><Recipe/></li>
+            </ol>
 	      </div>
 	    );
 	  }
@@ -59,6 +76,10 @@
 	  document.getElementById('app-container')
 	);
 
-	</script>
+
+
+
+
+</script>
 </body>
 </html>
